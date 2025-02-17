@@ -50,4 +50,14 @@ public class Stacky<T> {
     public int size() {
         return size;
     }
+
+    public void printStack() {
+        Node<T> current = top;
+        System.out.print("Stack (top -> bottom): ");
+        while (current != null) {
+            System.out.print(current.data + " ");
+            current = current.next;
+        }
+        System.out.println();
+    }
 }
